@@ -1,6 +1,8 @@
 SRC		=	parsing.c \
 			error.c \
 			display.c \
+			display_permissions.c \
+			file_list.c \
 			main.c
 
 SRCS 	=	$(addprefix srcs/, ${SRC})

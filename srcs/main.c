@@ -3,12 +3,11 @@
 int main(int ac, char **av) {
 	(void)ac;
 	t_ls ls;
-	struct stat test;
-	struct stat testo;
-	struct stat testi;
-	parsing(av, &ls);
-
-	stat("libft", &test);
-	test.
-	display_permissions_type(test.st_mode);
+	av = parsing(av, &ls);
+	for (int i = 0; av[i]; i++) {
+		if ((ac > 2 && !ls.flags) || ac > 3)
+			printf("%s:\n", av[i]);
+		init_list(&ls.list, av[i], &ls);
+		display_files(&ls);
+	}
 }

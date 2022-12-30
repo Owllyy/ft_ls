@@ -17,9 +17,11 @@ void options_parsing(char *flags, t_ls *ls) {
 	}
 }
 
-int parsing(char **av, t_ls *ls) {
+char **parsing(char **av, t_ls *ls) {
 
-	if (av[1] && av[1][0] == '-' && av[1][1])
+	if (av[1] && av[1][0] == '-' && av[1][1]) {
 		options_parsing(&av[1][1], ls);
-	return 0;
+		return &av[2];
+	}
+	return (&av[1]);
 }
