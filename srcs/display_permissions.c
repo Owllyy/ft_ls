@@ -38,18 +38,23 @@ void display_permissions_type(mode_t mode, char *file_path) {
 	char perms[12];
 
 	perms[0] = get_type(mode);
+
+	//set user permissions + SUID char
 	perms[1] = get_flag(mode, S_IRUSR) ? 'r': '-';
 	perms[2] = get_flag(mode, S_IWUSR) ? 'w': '-';
 	perms[3] = get_flag(mode, S_IXUSR) ? 'x': '-';
 		perms[3] = get_flag(mode, S_ISUID) ? (perms[3] == '-' ? 'S' : 's') : perms[3];
+	//set group permissions + GUID char
 	perms[4] = get_flag(mode, S_IRGRP) ? 'r': '-';
 	perms[5] = get_flag(mode, S_IWGRP) ? 'w': '-';
 	perms[6] = get_flag(mode, S_IXGRP) ? 'x': '-';
 		perms[6] = get_flag(mode, S_ISGID) ? (perms[6] == '-' ? 'S' : 's') : perms[6];
+	//set other permissions + SVTX char
 	perms[7] = get_flag(mode, S_IROTH) ? 'r': '-';
 	perms[8] = get_flag(mode, S_IWOTH) ? 'w': '-';
 	perms[9] = get_flag(mode, S_IXOTH) ? 'x': '-';
 		perms[9] = get_flag(mode, S_ISVTX) ? (perms[9] == '-' ? 'T' : 't') : perms[9];
+	
 	perms[10] = get_acl_flag(mode, file_path);
 	perms[11] = 0;
 	ft_printf("%s ", perms);
