@@ -8,6 +8,7 @@ int main(int ac, char **av) {
 		if ((ac > 2 && !ls.flags) || ac > 3)
 			printf("%s:\n", av[i]);
 		init_list(&ls.list, av[i], &ls);
+		sort_ls(&ls.list, &ls);
 		display_files(&ls);
 	}
 }

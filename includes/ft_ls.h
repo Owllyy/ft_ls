@@ -12,8 +12,8 @@
 #include <sys/stat.h>
 #include <time.h>
 #include <stdio.h>
-
-#define PATH_MAX 4096
+#include <sys/acl.h>
+#include "../libft/libft.h"
 
 typedef struct			s_file
 {
@@ -26,6 +26,7 @@ typedef struct			s_file
 	dev_t				rdev;
 	time_t				time;
 	long				ntime;
+	struct passwd		*pw;
 	char				*name;
 	char				full_path[PATH_MAX];
 	struct s_file		*next;
@@ -59,9 +60,18 @@ char **parsing(char **av, t_ls *ls);
 /*  DISPLAY  */
 void display_files(t_ls *ls);
 void display_name(t_file *file);
-void display_permissions_type(mode_t mode);
+void display_permissions_type(mode_t mode, char *file_path);
+void display_links(nlink_t links);
+void display_owner(struct passwd *pw);
+void display_group(struct passwd *pw);
+void display_size(off_t size);
+void display_date(time_t file_time);
 
 /*  LIST  */
 void init_list(t_file **list, char *path_name, t_ls *ls);
+void sort_ls(t_file ** list, t_ls *ls);
+
+/*  PATH  */
+void get_full_path(char *old_path, char *name, char *new_path);
 
 #endif

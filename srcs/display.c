@@ -1,30 +1,50 @@
 #include "../includes/ft_ls.h"
 
 void display_name(t_file * file) {
-	ft_printf("%8s ", file->name);
+	ft_printf("%s ", file->name);
 }
 
 static void display_basic(t_file * list) {
 	for (t_file *i = list; i; i = i->next) {
 		display_name(i);
 	}
-	printf("\n");
+	printf("\n\n");
 	for (t_file *i = list; i; i = i->next) {
-		if (i->son)
+		if (i->son) {
+			ft_printf("%s: \n", i->full_path);
 			display_basic(i->son);
+			ft_printf("\n");
+		}
 	}
 }
 
-static void display_list(t_file * list) {
+static void display_block(t_file * list) {
+	long long total = 0;
 	for (t_file *i = list; i; i = i->next) {
-		display_permissions_type(i->mode);
+		total += (long long)i->blocks;
+	}
+	printf("total %d\n", (int)total);
+}
+
+static void display_list(t_file * list) {
+	display_block(list);
+	for (t_file *i = list; i; i = i->next) {
+		display_permissions_type(i->mode, i->full_path);
+		display_links(i->nlink);
+		display_owner(i->pw);
+		display_group(i->pw);
+		display_size(i->size);
+		display_date(i->time);
 		display_name(i);
-		printf("\n");
+		ft_printf("\n");
 	}
 	printf("\n");
 	for (t_file *i = list; i; i = i->next) {
-		if (i->son)
+		if (i->son) {
+			printf("%s: \n", i->full_path);
 			display_list(i->son);
+			ft_printf("\n");
+		}
 	}
 }
 
