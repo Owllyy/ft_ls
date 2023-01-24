@@ -56,3 +56,51 @@ void init_list(t_file **list, char *path_name, t_ls *ls) {
 		closedir(dir);
 	}
 }
+
+// void init_list2(t_file **list, char *path_name, t_ls *ls) {
+// 	DIR * dir = opendir(path_name);
+// 	struct dirent * entity;
+// 	t_file *current_file;
+
+// 	if (!dir) return;
+
+// 	while ((entity = readdir(dir))) {
+// 		if (entity->d_name[0] == '.' && !get_flag(ls->flags, a))
+// 			continue;
+
+// 		current_file = add_file(list, entity, path_name);
+// 		if (S_ISDIR(current_file->mode) && get_flag(ls->flags, R)) {
+// 			init_list(&(current_file->son), current_file->full_path, ls);
+// 		}
+// 	}
+// 	closedir(dir);
+// }
+
+// struct DirEntry {
+// 	enum Type {
+// 		Dir,
+// 		File,
+// 	};
+// 	union {
+// 		Dir dir;
+// 		File file;
+// 	};
+// };
+
+// struct DirEntryList {
+// 	DirEntry* start;
+// 	DirEntry* end;
+// };
+
+// struct Dir {
+// 	DirInfo info;
+// 	DirEntryList entries;
+// };
+
+// struct File {
+// 	FileInfo info;
+// };
+
+// Result Dir_init(Dir* dir, Path path);
+
+// Result DirEntryList_push(DirEntryList* list, DirEntry entry);

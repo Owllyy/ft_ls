@@ -43,11 +43,11 @@ typedef struct s_ls
 #define add_flag(a, b)       (a = a | b)
 #define get_flag(a, b)       ((a & b) ? 1 : 0)
 enum options {
-	l = 1,
-	r = 2,
-	R = 4,
-	a = 8,
-	t = 16
+	l = 1 << 0,
+	r = 1 << 1,
+	R = 1 << 2,
+	a = 1 << 3,
+	t = 1 << 4,
 };
 
 /*  ERRORS  */
