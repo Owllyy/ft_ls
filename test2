@@ -1,0 +1,405 @@
+total 128
+drwxr-xr-x@ 11 owlly  staff    352 Mar 25 15:51 .
+drwxr-xr-x@  6 owlly  staff    192 Feb 18 19:35 ..
+drwxr-xr-x@ 14 owlly  staff    448 Mar 25 13:52 .git
+-rw-r--r--@  1 owlly  staff      3 Feb 14 10:36 .gitignore
+-rw-r--r--@  1 owlly  staff    706 Mar 25 14:32 Makefile
+-rwxr-xr-x@  1 owlly  staff  40386 Mar 25 15:50 ft_ls
+drwxr-xr-x@  3 owlly  staff     96 Feb 14 14:03 includes
+drwxr-xr-x@ 13 owlly  staff    416 Mar 25 15:50 libft
+drwxr-xr-x@ 22 owlly  staff    704 Mar 25 15:50 srcs
+-rw-r--r--@  1 owlly  staff  14676 Mar 25 15:51 test
+-rw-r--r--@  1 owlly  staff      0 Mar 25 15:51 test2
+
+./.git:
+total 80
+drwxr-xr-x@ 14 owlly  staff    448 Mar 25 13:52 .
+drwxr-xr-x@ 11 owlly  staff    352 Mar 25 15:51 ..
+-rw-r--r--@  1 owlly  staff     93 Mar 25 15:49 FETCH_HEAD
+-rw-r--r--@  1 owlly  staff     23 Feb 14 12:24 HEAD
+-rw-r--r--@  1 owlly  staff     41 Feb 14 12:24 ORIG_HEAD
+-rw-r--r--@  1 owlly  staff    329 Feb 14 10:36 config
+-rw-r--r--@  1 owlly  staff     73 Feb 14 10:36 description
+drwxr-xr-x@ 15 owlly  staff    480 Feb 14 10:36 hooks
+-rw-r--r--@  1 owlly  staff  12809 Feb 14 14:03 index
+drwxr-xr-x@  3 owlly  staff     96 Feb 14 10:36 info
+drwxr-xr-x@  4 owlly  staff    128 Feb 14 10:36 logs
+drwxr-xr-x@ 13 owlly  staff    416 Mar 25 15:49 objects
+-rw-r--r--@  1 owlly  staff    114 Feb 14 10:36 packed-refs
+drwxr-xr-x@  5 owlly  staff    160 Feb 14 14:03 refs
+
+./.git/hooks:
+total 120
+drwxr-xr-x@ 15 owlly  staff   480 Feb 14 10:36 .
+drwxr-xr-x@ 14 owlly  staff   448 Mar 25 13:52 ..
+-rwxr-xr-x@  1 owlly  staff   478 Feb 14 10:36 applypatch-msg.sample
+-rwxr-xr-x@  1 owlly  staff   896 Feb 14 10:36 commit-msg.sample
+-rwxr-xr-x@  1 owlly  staff  4726 Feb 14 10:36 fsmonitor-watchman.sample
+-rwxr-xr-x@  1 owlly  staff   189 Feb 14 10:36 post-update.sample
+-rwxr-xr-x@  1 owlly  staff   424 Feb 14 10:36 pre-applypatch.sample
+-rwxr-xr-x@  1 owlly  staff  1643 Feb 14 10:36 pre-commit.sample
+-rwxr-xr-x@  1 owlly  staff   416 Feb 14 10:36 pre-merge-commit.sample
+-rwxr-xr-x@  1 owlly  staff  1374 Feb 14 10:36 pre-push.sample
+-rwxr-xr-x@  1 owlly  staff  4898 Feb 14 10:36 pre-rebase.sample
+-rwxr-xr-x@  1 owlly  staff   544 Feb 14 10:36 pre-receive.sample
+-rwxr-xr-x@  1 owlly  staff  1492 Feb 14 10:36 prepare-commit-msg.sample
+-rwxr-xr-x@  1 owlly  staff  2783 Feb 14 10:36 push-to-checkout.sample
+-rwxr-xr-x@  1 owlly  staff  3650 Feb 14 10:36 update.sample
+
+./.git/info:
+total 8
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 10:36 .
+drwxr-xr-x@ 14 owlly  staff  448 Mar 25 13:52 ..
+-rw-r--r--@  1 owlly  staff  240 Feb 14 10:36 exclude
+
+./.git/logs:
+total 8
+drwxr-xr-x@  4 owlly  staff  128 Feb 14 10:36 .
+drwxr-xr-x@ 14 owlly  staff  448 Mar 25 13:52 ..
+-rw-r--r--@  1 owlly  staff  523 Feb 14 12:24 HEAD
+drwxr-xr-x@  4 owlly  staff  128 Feb 14 14:03 refs
+
+./.git/logs/refs:
+total 0
+drwxr-xr-x@ 4 owlly  staff  128 Feb 14 14:03 .
+drwxr-xr-x@ 4 owlly  staff  128 Feb 14 10:36 ..
+drwxr-xr-x@ 3 owlly  staff   96 Feb 14 10:36 heads
+drwxr-xr-x@ 3 owlly  staff   96 Feb 14 10:36 remotes
+
+./.git/logs/refs/heads:
+total 8
+drwxr-xr-x@ 3 owlly  staff   96 Feb 14 10:36 .
+drwxr-xr-x@ 4 owlly  staff  128 Feb 14 14:03 ..
+-rw-r--r--@ 1 owlly  staff  186 Feb 14 10:36 master
+
+./.git/logs/refs/remotes:
+total 0
+drwxr-xr-x@ 3 owlly  staff   96 Feb 14 10:36 .
+drwxr-xr-x@ 4 owlly  staff  128 Feb 14 14:03 ..
+drwxr-xr-x@ 3 owlly  staff   96 Feb 14 10:36 origin
+
+./.git/logs/refs/remotes/origin:
+total 8
+drwxr-xr-x@ 3 owlly  staff   96 Feb 14 10:36 .
+drwxr-xr-x@ 3 owlly  staff   96 Feb 14 10:36 ..
+-rw-r--r--@ 1 owlly  staff  186 Feb 14 10:36 HEAD
+
+./.git/objects:
+total 0
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 .
+drwxr-xr-x@ 14 owlly  staff  448 Mar 25 13:52 ..
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 32
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 46
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 50
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 5e
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 62
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 bb
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 d4
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 d5
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 e2
+drwxr-xr-x@  2 owlly  staff   64 Feb 14 10:36 info
+drwxr-xr-x@  4 owlly  staff  128 Feb 14 10:36 pack
+
+./.git/objects/32:
+total 8
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 ..
+-r--r--r--@  1 owlly  staff  170 Feb 14 12:24 19008d17a44e771bcc905a693b28da612b5443
+
+./.git/objects/46:
+total 8
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 ..
+-r--r--r--@  1 owlly  staff   51 Feb 14 12:24 880bba854f0e3de50bda9205d8b50d5697708a
+
+./.git/objects/50:
+total 8
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 ..
+-r--r--r--@  1 owlly  staff  857 Feb 14 12:24 3f2bc3630d50b094ac25db1586d3ca7a5045b3
+
+./.git/objects/5e:
+total 8
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 ..
+-r--r--r--@  1 owlly  staff  698 Feb 14 12:24 39e525b65b4a4985377cf674867fa81061f870
+
+./.git/objects/62:
+total 8
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 ..
+-r--r--r--@  1 owlly  staff  200 Feb 14 12:24 153caa77e8bdde6e64776037b12338c7e63d0e
+
+./.git/objects/bb:
+total 8
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 ..
+-r--r--r--@  1 owlly  staff  242 Feb 14 14:03 81003608f3be96c4d4f45b6f6e1a92ec9c236a
+
+./.git/objects/d4:
+total 8
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 ..
+-r--r--r--@  1 owlly  staff  444 Feb 14 12:24 08072a7eced27c1a998b48f518969f2e4b685f
+
+./.git/objects/d5:
+total 8
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 ..
+-r--r--r--@  1 owlly  staff  439 Feb 14 12:24 83a0610b2c5b7f4dc59e0b2a2f2cf5146bec9d
+
+./.git/objects/e2:
+total 8
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 ..
+-r--r--r--@  1 owlly  staff  475 Feb 14 12:24 a97c8870c606d2d673eb4d286f9be6c08559cf
+
+./.git/objects/info:
+total 0
+drwxr-xr-x@  2 owlly  staff   64 Feb 14 10:36 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:49 ..
+
+./.git/objects/pack:
+total 224
+drwxr-xr-x@  4 owlly  staff     128 Feb 14 10:36 .
+drwxr-xr-x@ 13 owlly  staff     416 Mar 25 15:49 ..
+-r--r--r--@  1 owlly  staff    6840 Feb 14 10:36 pack-5f7e2bc6c15423ba365f64e3ea6e0b39874d94c1.idx
+-r--r--r--@  1 owlly  staff  103794 Feb 14 10:36 pack-5f7e2bc6c15423ba365f64e3ea6e0b39874d94c1.pack
+
+./.git/refs:
+total 0
+drwxr-xr-x@  5 owlly  staff  160 Feb 14 14:03 .
+drwxr-xr-x@ 14 owlly  staff  448 Mar 25 13:52 ..
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 12:24 heads
+drwxr-xr-x@  3 owlly  staff   96 Feb 14 10:36 remotes
+drwxr-xr-x@  2 owlly  staff   64 Feb 14 10:36 tags
+
+./.git/refs/heads:
+total 8
+drwxr-xr-x@ 3 owlly  staff   96 Feb 14 12:24 .
+drwxr-xr-x@ 5 owlly  staff  160 Feb 14 14:03 ..
+-rw-r--r--@ 1 owlly  staff   41 Feb 14 10:36 master
+
+./.git/refs/remotes:
+total 0
+drwxr-xr-x@ 3 owlly  staff   96 Feb 14 10:36 .
+drwxr-xr-x@ 5 owlly  staff  160 Feb 14 14:03 ..
+drwxr-xr-x@ 3 owlly  staff   96 Feb 14 10:36 origin
+
+./.git/refs/remotes/origin:
+total 8
+drwxr-xr-x@ 3 owlly  staff  96 Feb 14 10:36 .
+drwxr-xr-x@ 3 owlly  staff  96 Feb 14 10:36 ..
+-rw-r--r--@ 1 owlly  staff  32 Feb 14 10:36 HEAD
+
+./.git/refs/tags:
+total 0
+drwxr-xr-x@ 2 owlly  staff   64 Feb 14 10:36 .
+drwxr-xr-x@ 5 owlly  staff  160 Feb 14 14:03 ..
+
+./includes:
+total 8
+drwxr-xr-x@  3 owlly  staff    96 Feb 14 14:03 .
+drwxr-xr-x@ 11 owlly  staff   352 Mar 25 15:51 ..
+-rw-r--r--@  1 owlly  staff  1742 Mar 25 14:23 ft_ls.h
+
+./libft:
+total 152
+drwxr-xr-x@ 13 owlly  staff    416 Mar 25 15:50 .
+drwxr-xr-x@ 11 owlly  staff    352 Mar 25 15:51 ..
+-rw-r--r--@  1 owlly  staff   1985 Feb 14 10:36 Makefile
+drwxr-xr-x@ 18 owlly  staff    576 Mar 25 14:41 char
+drwxr-xr-x@  4 owlly  staff    128 Mar 25 14:41 gnl
+drwxr-xr-x@ 14 owlly  staff    448 Mar 25 14:41 int
+-rw-r--r--@  1 owlly  staff  62200 Mar 25 15:50 libft.a
+-rw-r--r--@  1 owlly  staff   6110 Feb 14 10:36 libft.h
+drwxr-xr-x@ 20 owlly  staff    640 Mar 25 14:41 list
+drwxr-xr-x@ 20 owlly  staff    640 Mar 25 14:41 memory
+drwxr-xr-x@ 10 owlly  staff    320 Mar 25 14:41 print
+drwxr-xr-x@ 12 owlly  staff    384 Mar 25 14:41 printf
+drwxr-xr-x@ 38 owlly  staff   1216 Mar 25 14:41 string
+
+./libft/char:
+total 128
+drwxr-xr-x@ 18 owlly  staff  576 Mar 25 14:41 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:50 ..
+-rw-r--r--@  1 owlly  staff   91 Feb 14 10:36 ft_isalnum.c
+-rw-r--r--@  1 owlly  staff  672 Mar 25 14:41 ft_isalnum.o
+-rw-r--r--@  1 owlly  staff  109 Feb 14 10:36 ft_isalpha.c
+-rw-r--r--@  1 owlly  staff  632 Mar 25 14:41 ft_isalpha.o
+-rw-r--r--@  1 owlly  staff   79 Feb 14 10:36 ft_isascii.c
+-rw-r--r--@  1 owlly  staff  576 Mar 25 14:41 ft_isascii.o
+-rw-r--r--@  1 owlly  staff   81 Feb 14 10:36 ft_isdigit.c
+-rw-r--r--@  1 owlly  staff  584 Mar 25 14:41 ft_isdigit.o
+-rw-r--r--@  1 owlly  staff   80 Feb 14 10:36 ft_isprint.c
+-rw-r--r--@  1 owlly  staff  584 Mar 25 14:41 ft_isprint.o
+-rw-r--r--@  1 owlly  staff   98 Feb 14 10:36 ft_iswhitespace.c
+-rw-r--r--@  1 owlly  staff  616 Mar 25 14:41 ft_iswhitespace.o
+-rw-r--r--@  1 owlly  staff  108 Feb 14 10:36 ft_tolower.c
+-rw-r--r--@  1 owlly  staff  592 Mar 25 14:41 ft_tolower.o
+-rw-r--r--@  1 owlly  staff  108 Feb 14 10:36 ft_toupper.c
+-rw-r--r--@  1 owlly  staff  592 Mar 25 14:41 ft_toupper.o
+
+./libft/gnl:
+total 16
+drwxr-xr-x@  4 owlly  staff   128 Mar 25 14:41 .
+drwxr-xr-x@ 13 owlly  staff   416 Mar 25 15:50 ..
+-rw-r--r--@  1 owlly  staff  1503 Feb 14 10:36 ft_get_next_line.c
+-rw-r--r--@  1 owlly  staff  2184 Mar 25 14:41 ft_get_next_line.o
+
+./libft/int:
+total 96
+drwxr-xr-x@ 14 owlly  staff   448 Mar 25 14:41 .
+drwxr-xr-x@ 13 owlly  staff   416 Mar 25 15:50 ..
+-rw-r--r--@  1 owlly  staff   492 Feb 14 10:36 ft_atoi.c
+-rw-r--r--@  1 owlly  staff   984 Mar 25 14:41 ft_atoi.o
+-rw-r--r--@  1 owlly  staff   193 Feb 14 10:36 ft_intlen.c
+-rw-r--r--@  1 owlly  staff   664 Mar 25 14:41 ft_intlen.o
+-rw-r--r--@  1 owlly  staff   359 Feb 14 10:36 ft_itoa.c
+-rw-r--r--@  1 owlly  staff   904 Mar 25 14:41 ft_itoa.o
+-rw-r--r--@  1 owlly  staff   188 Feb 14 10:36 ft_uintlen.c
+-rw-r--r--@  1 owlly  staff   624 Mar 25 14:41 ft_uintlen.o
+-rw-r--r--@  1 owlly  staff   302 Feb 14 10:36 ft_uitoa.c
+-rw-r--r--@  1 owlly  staff   832 Mar 25 14:41 ft_uitoa.o
+-rw-r--r--@  1 owlly  staff   628 Feb 14 10:36 ft_ull_base.c
+-rw-r--r--@  1 owlly  staff  1336 Mar 25 14:41 ft_ull_base.o
+
+./libft/list:
+total 144
+drwxr-xr-x@ 20 owlly  staff  640 Mar 25 14:41 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:50 ..
+-rw-r--r--@  1 owlly  staff  223 Feb 14 10:36 ft_lstadd_back.c
+-rw-r--r--@  1 owlly  staff  680 Mar 25 14:41 ft_lstadd_back.o
+-rw-r--r--@  1 owlly  staff  141 Feb 14 10:36 ft_lstadd_front.c
+-rw-r--r--@  1 owlly  staff  592 Mar 25 14:41 ft_lstadd_front.o
+-rw-r--r--@  1 owlly  staff  268 Feb 14 10:36 ft_lstclear.c
+-rw-r--r--@  1 owlly  staff  704 Mar 25 14:41 ft_lstclear.o
+-rw-r--r--@  1 owlly  staff  139 Feb 14 10:36 ft_lstdelone.c
+-rw-r--r--@  1 owlly  staff  624 Mar 25 14:41 ft_lstdelone.o
+-rw-r--r--@  1 owlly  staff  215 Feb 14 10:36 ft_lstiter.c
+-rw-r--r--@  1 owlly  staff  624 Mar 25 14:41 ft_lstiter.o
+-rw-r--r--@  1 owlly  staff  210 Feb 14 10:36 ft_lstlast.c
+-rw-r--r--@  1 owlly  staff  608 Mar 25 14:41 ft_lstlast.o
+-rw-r--r--@  1 owlly  staff  518 Feb 14 10:36 ft_lstmap.c
+-rw-r--r--@  1 owlly  staff  872 Mar 25 14:41 ft_lstmap.o
+-rw-r--r--@  1 owlly  staff  193 Feb 14 10:36 ft_lstnew.c
+-rw-r--r--@  1 owlly  staff  632 Mar 25 14:41 ft_lstnew.o
+-rw-r--r--@  1 owlly  staff  182 Feb 14 10:36 ft_lstsize.c
+-rw-r--r--@  1 owlly  staff  592 Mar 25 14:41 ft_lstsize.o
+
+./libft/memory:
+total 144
+drwxr-xr-x@ 20 owlly  staff   640 Mar 25 14:41 .
+drwxr-xr-x@ 13 owlly  staff   416 Mar 25 15:50 ..
+-rw-r--r--@  1 owlly  staff    81 Feb 14 10:36 ft_bzero.c
+-rw-r--r--@  1 owlly  staff   592 Mar 25 14:41 ft_bzero.o
+-rw-r--r--@  1 owlly  staff   223 Feb 14 10:36 ft_calloc.c
+-rw-r--r--@  1 owlly  staff   688 Mar 25 14:41 ft_calloc.o
+-rw-r--r--@  1 owlly  staff   900 Feb 14 10:36 ft_malloc.c
+-rw-r--r--@  1 owlly  staff  1296 Mar 25 14:41 ft_malloc.o
+-rw-r--r--@  1 owlly  staff   340 Feb 14 10:36 ft_memccpy.c
+-rw-r--r--@  1 owlly  staff   720 Mar 25 14:41 ft_memccpy.o
+-rw-r--r--@  1 owlly  staff   228 Feb 14 10:36 ft_memchr.c
+-rw-r--r--@  1 owlly  staff   632 Mar 25 14:41 ft_memchr.o
+-rw-r--r--@  1 owlly  staff   326 Feb 14 10:36 ft_memcmp.c
+-rw-r--r--@  1 owlly  staff   712 Mar 25 14:41 ft_memcmp.o
+-rw-r--r--@  1 owlly  staff   237 Feb 14 10:36 ft_memcpy.c
+-rw-r--r--@  1 owlly  staff   656 Mar 25 14:41 ft_memcpy.o
+-rw-r--r--@  1 owlly  staff   287 Feb 14 10:36 ft_memmove.c
+-rw-r--r--@  1 owlly  staff   744 Mar 25 14:41 ft_memmove.o
+-rw-r--r--@  1 owlly  staff   165 Feb 14 10:36 ft_memset.c
+-rw-r--r--@  1 owlly  staff   592 Mar 25 14:41 ft_memset.o
+
+./libft/print:
+total 64
+drwxr-xr-x@ 10 owlly  staff  320 Mar 25 14:41 .
+drwxr-xr-x@ 13 owlly  staff  416 Mar 25 15:50 ..
+-rw-r--r--@  1 owlly  staff   81 Feb 14 10:36 ft_putchar_fd.c
+-rw-r--r--@  1 owlly  staff  600 Mar 25 14:41 ft_putchar_fd.o
+-rw-r--r--@  1 owlly  staff  131 Feb 14 10:36 ft_putendl_fd.c
+-rw-r--r--@  1 owlly  staff  672 Mar 25 14:41 ft_putendl_fd.o
+-rw-r--r--@  1 owlly  staff  267 Feb 14 10:36 ft_putnbr_fd.c
+-rw-r--r--@  1 owlly  staff  752 Mar 25 14:41 ft_putnbr_fd.o
+-rw-r--r--@  1 owlly  staff  156 Feb 14 10:36 ft_putstr_fd.c
+-rw-r--r--@  1 owlly  staff  672 Mar 25 14:41 ft_putstr_fd.o
+
+./libft/printf:
+total 80
+drwxr-xr-x@ 12 owlly  staff   384 Mar 25 14:41 .
+drwxr-xr-x@ 13 owlly  staff   416 Mar 25 15:50 ..
+-rw-r--r--@  1 owlly  staff  1167 Feb 14 10:36 flag_s.c
+-rw-r--r--@  1 owlly  staff  2112 Mar 25 14:41 flag_s.o
+-rw-r--r--@  1 owlly  staff  1320 Feb 14 10:36 ft_printf.c
+-rw-r--r--@  1 owlly  staff  1696 Mar 25 14:41 ft_printf.o
+-rw-r--r--@  1 owlly  staff  1466 Feb 14 10:36 print_char.c
+-rw-r--r--@  1 owlly  staff  2496 Mar 25 14:41 print_char.o
+-rw-r--r--@  1 owlly  staff  2600 Feb 14 10:36 print_num.c
+-rw-r--r--@  1 owlly  staff  3784 Mar 25 14:41 print_num.o
+-rw-r--r--@  1 owlly  staff  1179 Feb 14 10:36 print_num_utils.c
+-rw-r--r--@  1 owlly  staff  1960 Mar 25 14:41 print_num_utils.o
+
+./libft/string:
+total 288
+drwxr-xr-x@ 38 owlly  staff  1216 Mar 25 14:41 .
+drwxr-xr-x@ 13 owlly  staff   416 Mar 25 15:50 ..
+-rw-r--r--@  1 owlly  staff  1219 Feb 14 10:36 ft_split.c
+-rw-r--r--@  1 owlly  staff  1888 Mar 25 14:41 ft_split.o
+-rw-r--r--@  1 owlly  staff   195 Feb 14 10:36 ft_strcat.c
+-rw-r--r--@  1 owlly  staff   680 Mar 25 14:41 ft_strcat.o
+-rw-r--r--@  1 owlly  staff   204 Feb 14 10:36 ft_strchr.c
+-rw-r--r--@  1 owlly  staff   640 Mar 25 14:41 ft_strchr.o
+-rw-r--r--@  1 owlly  staff   299 Feb 14 10:36 ft_strcmp.c
+-rw-r--r--@  1 owlly  staff   776 Mar 25 14:41 ft_strcmp.o
+-rw-r--r--@  1 owlly  staff   207 Feb 14 10:36 ft_strcpy.c
+-rw-r--r--@  1 owlly  staff   712 Mar 25 14:41 ft_strcpy.o
+-rw-r--r--@  1 owlly  staff   239 Feb 14 10:36 ft_strdup.c
+-rw-r--r--@  1 owlly  staff   768 Mar 25 14:41 ft_strdup.o
+-rw-r--r--@  1 owlly  staff   150 Feb 14 10:36 ft_strichr.c
+-rw-r--r--@  1 owlly  staff   640 Mar 25 14:41 ft_strichr.o
+-rw-r--r--@  1 owlly  staff   408 Feb 14 10:36 ft_strjoin.c
+-rw-r--r--@  1 owlly  staff   928 Mar 25 14:41 ft_strjoin.o
+-rw-r--r--@  1 owlly  staff   345 Feb 14 10:36 ft_strlcat.c
+-rw-r--r--@  1 owlly  staff   864 Mar 25 14:41 ft_strlcat.o
+-rw-r--r--@  1 owlly  staff   267 Feb 14 10:36 ft_strlcpy.c
+-rw-r--r--@  1 owlly  staff   784 Mar 25 14:41 ft_strlcpy.o
+-rw-r--r--@  1 owlly  staff   142 Feb 14 10:36 ft_strlen.c
+-rw-r--r--@  1 owlly  staff   608 Mar 25 14:41 ft_strlen.o
+-rw-r--r--@  1 owlly  staff   310 Feb 14 10:36 ft_strmapi.c
+-rw-r--r--@  1 owlly  staff   800 Mar 25 14:41 ft_strmapi.o
+-rw-r--r--@  1 owlly  staff   350 Feb 14 10:36 ft_strncmp.c
+-rw-r--r--@  1 owlly  staff   840 Mar 25 14:41 ft_strncmp.o
+-rw-r--r--@  1 owlly  staff   252 Feb 14 10:36 ft_strndup.c
+-rw-r--r--@  1 owlly  staff   776 Mar 25 14:41 ft_strndup.o
+-rw-r--r--@  1 owlly  staff   569 Mar 25 13:57 ft_strnstr.c
+-rw-r--r--@  1 owlly  staff  1080 Mar 25 14:41 ft_strnstr.o
+-rw-r--r--@  1 owlly  staff   226 Feb 14 10:36 ft_strrchr.c
+-rw-r--r--@  1 owlly  staff   640 Mar 25 14:41 ft_strrchr.o
+-rw-r--r--@  1 owlly  staff   694 Feb 14 10:36 ft_strtrim.c
+-rw-r--r--@  1 owlly  staff  1400 Mar 25 14:41 ft_strtrim.o
+-rw-r--r--@  1 owlly  staff   473 Feb 14 10:36 ft_substr.c
+-rw-r--r--@  1 owlly  staff  1008 Mar 25 14:41 ft_substr.o
+
+./srcs:
+total 248
+drwxr-xr-x@ 22 owlly  staff   704 Mar 25 15:50 .
+drwxr-xr-x@ 11 owlly  staff   352 Mar 25 15:51 ..
+-rw-r--r--@  1 owlly  staff  1407 Mar 25 14:46 arena_pool.c
+-rw-r--r--@  1 owlly  staff  4496 Mar 25 14:46 arena_pool.o
+-rw-r--r--@  1 owlly  staff  1217 Feb 14 14:03 display.c
+-rw-r--r--@  1 owlly  staff  8848 Mar 25 14:41 display.o
+-rw-r--r--@  1 owlly  staff   573 Feb 14 10:36 display_info.c
+-rw-r--r--@  1 owlly  staff  5312 Mar 25 14:41 display_info.o
+-rw-r--r--@  1 owlly  staff  1651 Feb 14 10:36 display_permissions.c
+-rw-r--r--@  1 owlly  staff  5384 Mar 25 14:41 display_permissions.o
+-rw-r--r--@  1 owlly  staff   145 Feb 14 10:36 error.c
+-rw-r--r--@  1 owlly  staff  2152 Mar 25 14:41 error.o
+-rw-r--r--@  1 owlly  staff  1610 Mar 25 15:50 file_list.c
+-rw-r--r--@  1 owlly  staff  9336 Mar 25 15:50 file_list.o
+-rw-r--r--@  1 owlly  staff   284 Feb 14 10:36 get_path.c
+-rw-r--r--@  1 owlly  staff  2408 Mar 25 14:41 get_path.o
+-rw-r--r--@  1 owlly  staff   486 Mar 25 14:51 main.c
+-rw-r--r--@  1 owlly  staff  6472 Mar 25 14:51 main.o
+-rw-r--r--@  1 owlly  staff   574 Feb 14 10:36 parsing.c
+-rw-r--r--@  1 owlly  staff  6752 Mar 25 14:41 parsing.o
+-rw-r--r--@  1 owlly  staff  1424 Feb 14 14:03 sort_list.c
+-rw-r--r--@  1 owlly  staff  8472 Mar 25 14:41 sort_list.o

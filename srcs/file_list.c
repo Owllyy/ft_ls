@@ -1,31 +1,25 @@
 #include "../includes/ft_ls.h"
 
-t_file *add_file(t_file ** list, struct dirent * entity, char * path) {
+t_file *add_file(t_file ** list, struct dirent * entity, char * path, t_ls *ls) {
 	t_file *new_file;
 	struct stat stat;
 
-	new_file = malloc(sizeof(t_file));
-	// if (!new_file)
-	// 	fatal();
+	new_file = malloc_pool(sizeof(t_file), ls->pool);
+	if (!new_file)
+		panic(ls->pool, "Can't allocate new_file");
+
+	new_file->name = malloc_pool(ft_strlen(entity->d_name), ls->pool);
+	if (!new_file->name)
+		panic(ls->pool, "Can't allocate new_file->name");
 	new_file->name = ft_strdup(entity->d_name);
-	// if (!new_file->name)
-	// 	fatal();
+
 	get_full_path(path, new_file->name, new_file->full_path);
-	lstat(new_file->full_path, &stat);
-	new_file->mode = stat.st_mode;
-	new_file->nlink = stat.st_nlink;
-	new_file->uid = stat.st_uid;
-	new_file->gid = stat.st_gid;
-	new_file->size = stat.st_size;
-	new_file->rdev = stat.st_rdev;
-	new_file->time = stat.st_mtimespec.tv_sec;
-	new_file->ntime = stat.st_mtimespec.tv_nsec;
-	new_file->blocks = stat.st_blocks;
-	new_file->pw = getpwuid(new_file->uid);
+	lstat(new_file->full_path, &new_file->stat);
+	new_file->pw = getpwuid(new_file->stat.st_uid);
 	new_file->next = NULL;
 	new_file->son = NULL;
 
-	if (!*list) {
+	if (!(*list)) {
 		*list = new_file;
 	}
 	else {
@@ -39,16 +33,38 @@ t_file *add_file(t_file ** list, struct dirent * entity, char * path) {
 	return new_file;
 }
 
+int is_file_anonymous(char *file_name, t_ls *ls) {
+	if (file_name[0] == '.') {
+		if (!get_flag(ls->flags, a))
+			return 0;
+	}
+	return 1;
+}
+
+int is_file(char *file_name) {
+	if (file_name[0] == '.') {
+		if (file_name[1] == 0)
+			return 0;
+		if (file_name[1] == '.' && file_name[2] == 0)
+			return 0;
+	}
+	return 1;
+}
+
 void init_list(t_file **list, char *path_name, t_ls *ls) {
-	DIR * dir = opendir(path_name);
+	DIR * dir;
+	if (!path_name)
+		dir = opendir(".");
+	else
+		dir = opendir(path_name);
 	struct dirent * entity;
 	t_file *current_file;
 
 	if (dir) {
 		while ((entity = readdir(dir))) {
-			if (entity->d_name[0] != '.' || get_flag(ls->flags, a)) {
-				current_file = add_file(list, entity, path_name);
-				if (S_ISDIR(current_file->mode) && get_flag(ls->flags, R)) {
+			if (is_file_anonymous(entity->d_name, ls)) {
+				current_file = add_file(list, entity, path_name, ls);
+				if (S_ISDIR(current_file->stat.st_mode) && get_flag(ls->flags, R) && is_file(entity->d_name)) {
 					init_list(&(current_file->son), current_file->full_path, ls);
 				}
 			}
@@ -56,51 +72,3 @@ void init_list(t_file **list, char *path_name, t_ls *ls) {
 		closedir(dir);
 	}
 }
-
-// void init_list2(t_file **list, char *path_name, t_ls *ls) {
-// 	DIR * dir = opendir(path_name);
-// 	struct dirent * entity;
-// 	t_file *current_file;
-
-// 	if (!dir) return;
-
-// 	while ((entity = readdir(dir))) {
-// 		if (entity->d_name[0] == '.' && !get_flag(ls->flags, a))
-// 			continue;
-
-// 		current_file = add_file(list, entity, path_name);
-// 		if (S_ISDIR(current_file->mode) && get_flag(ls->flags, R)) {
-// 			init_list(&(current_file->son), current_file->full_path, ls);
-// 		}
-// 	}
-// 	closedir(dir);
-// }
-
-// struct DirEntry {
-// 	enum Type {
-// 		Dir,
-// 		File,
-// 	};
-// 	union {
-// 		Dir dir;
-// 		File file;
-// 	};
-// };
-
-// struct DirEntryList {
-// 	DirEntry* start;
-// 	DirEntry* end;
-// };
-
-// struct Dir {
-// 	DirInfo info;
-// 	DirEntryList entries;
-// };
-
-// struct File {
-// 	FileInfo info;
-// };
-
-// Result Dir_init(Dir* dir, Path path);
-
-// Result DirEntryList_push(DirEntryList* list, DirEntry entry);

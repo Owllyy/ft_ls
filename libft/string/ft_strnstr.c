@@ -21,12 +21,8 @@ int	is_to_find(const char *str, const char *to_find, size_t r)
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
 	int		i;
-	int		fsize;
 
 	i = 0;
-	if (!str)
-		fsize = str[-1];
-	fsize = ft_strlen(to_find);
 	if (!to_find)
 		return ((char *)str);
 	if (ft_strlen(str) < len)

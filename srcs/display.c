@@ -8,7 +8,7 @@ static void display_basic(t_file * list) {
 	for (t_file *i = list; i; i = i->next) {
 		display_name(i);
 	}
-	printf("\n\n");
+	ft_printf("\n\n");
 	for (t_file *i = list; i; i = i->next) {
 		if (i->son) {
 			ft_printf("%s: \n", i->full_path);
@@ -23,27 +23,25 @@ static void display_block(t_file * list) {
 	for (t_file *i = list; i; i = i->next) {
 		total += (long long)i->blocks;
 	}
-	printf("total %d\n", (int)total);
+	ft_printf("total %d\n", (int)total);
 }
 
 static void display_list(t_file * list) {
 	display_block(list);
 	for (t_file *i = list; i; i = i->next) {
-		display_permissions_type(i->mode, i->full_path);
-		display_links(i->nlink);
+		display_permissions_type(i->stat.st_mode, i->full_path);
+		display_links(i->stat.st_nlink);
 		display_owner(i->pw);
 		display_group(i->pw);
-		display_size(i->size);
-		display_date(i->time);
+		display_size(i->stat.st_size);
+		display_date(i->stat.st_mtimespec.tv_sec);
 		display_name(i);
 		ft_printf("\n");
 	}
-	printf("\n");
 	for (t_file *i = list; i; i = i->next) {
 		if (i->son) {
-			printf("%s: \n", i->full_path);
+			ft_printf("\n%s: \n", i->full_path);
 			display_list(i->son);
-			ft_printf("\n");
 		}
 	}
 }

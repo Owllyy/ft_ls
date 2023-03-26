@@ -6,6 +6,7 @@ SRC		=	parsing.c \
 			file_list.c \
 			get_path.c \
 			sort_list.c \
+			arena_pool.c \
 			main.c
 
 SRCS 	=	$(addprefix srcs/, ${SRC})
@@ -46,5 +47,8 @@ fclean: clean
 	${RM} ${NAME}
 
 re: fclean all
+
+run: all
+	./ft_ls
 
 .PHONY: all clean fclean re .c.o

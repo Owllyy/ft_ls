@@ -1,7 +1,7 @@
 #include "../includes/ft_ls.h"
 
 static unsigned int compare_assci(t_file * a, t_file * b) {
-	return (strcmp(a->name, b->name));
+	return (ft_strcmp(a->name, b->name));
 }
 
 static unsigned int compare_time(t_file * a, t_file * b) {

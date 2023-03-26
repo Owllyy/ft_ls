@@ -15,17 +15,18 @@
 #include <sys/acl.h>
 #include "../libft/libft.h"
 
+typedef struct			s_arena_pool
+{
+	struct s_arena_pool	*next;
+	void 				*data;
+	size_t				cursor;
+	size_t				max_size;
+}						t_pool;
+
 typedef struct			s_file
 {
+	struct stat			stat;
 	blkcnt_t			blocks;
-	mode_t				mode;
-	nlink_t				nlink;
-	uid_t				uid;
-	gid_t				gid;
-	off_t				size;
-	dev_t				rdev;
-	time_t				time;
-	long				ntime;
 	struct passwd		*pw;
 	char				*name;
 	char				full_path[PATH_MAX];
@@ -37,6 +38,7 @@ typedef struct s_ls
 {
 	char flags;
 	t_file *list;
+	t_pool *pool;
 } t_ls;
 
 /*  OPTIONS TOOLS  */
@@ -73,5 +75,11 @@ void sort_ls(t_file ** list, t_ls *ls);
 
 /*  PATH  */
 void get_full_path(char *old_path, char *name, char *new_path);
+
+/* ALLOCATION */
+void *malloc_pool(size_t size, t_pool *pool);
+void *init_pool(t_pool *pool, size_t size);
+void free_pool(t_pool *pool);
+void panic(t_pool *pool, char *err_msg);
 
 #endif
